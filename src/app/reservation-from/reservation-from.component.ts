@@ -29,6 +29,7 @@ export class ReservationFromComponent implements OnInit {
 
       let reservation: Reservation = this.reservationForm.value;
       this.reservationService.addReservation(reservation);
+      // Navigating to List Url
       this.router.navigate(['/list'])
 
     } else {

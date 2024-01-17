@@ -24,6 +24,7 @@ export class ReservationService {
   }
 
   addReservation(reservation: Reservation): void {
+    reservation.id = Date.now()
     this.reservations.push(reservation);
     this.updateLocalStorage();
   }
