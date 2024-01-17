@@ -1,12 +1,3 @@
 {
-  "reservations": [
-    {
-      "checkInDate": "1977-12-03",
-      "checkOutDate": "1986-12-20",
-      "guestName": "Saksham Gupta",
-      "guestEmail": "lalobit@mailinator.com",
-      "roomNumber": 87,
-      "id": "1705513788557"
-    }
-  ]
+  "reservations": []
 }

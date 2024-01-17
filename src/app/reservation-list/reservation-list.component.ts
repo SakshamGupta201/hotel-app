@@ -10,7 +10,7 @@ import { Reservation } from '../models/reservation';
 export class ReservationListComponent implements OnInit {
   reservations: Reservation[] = [];
 
-  constructor(private reservationService: ReservationService) { }
+  constructor(private reservationService: ReservationService) {}
 
   ngOnInit(): void {
     this.reservationService.getReservations().subscribe((reservations) => {
@@ -22,5 +22,8 @@ export class ReservationListComponent implements OnInit {
     this.reservationService.deleteReservation(id).subscribe(() => {
       console.log('Delete call got processed');
     });
+    this.reservations = this.reservations.filter(
+      (reservation) => reservation.id !== id
+    );
   }
 }
