@@ -38,6 +38,8 @@ export class ReservationService {
   }
 
   updateReservation(updatedReservation: Reservation): void {
+    console.log(updatedReservation.id);
+
     const index = this.reservations.findIndex(res => res.id === updatedReservation.id);
     if (index !== -1) {
       this.reservations[index] = updatedReservation;

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ReservationService } from '../reservation/reservation.service';
 import { Reservation } from '../reservation/models/reservation';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-reservation-list',
@@ -10,7 +11,9 @@ import { Reservation } from '../reservation/models/reservation';
 export class ReservationListComponent implements OnInit {
 
   reservations: Reservation[] = [];
-  constructor(private reservationService: ReservationService) { }
+
+  constructor(private reservationService: ReservationService) {
+  }
 
   ngOnInit(): void {
     this.reservations = this.reservationService.getReservations();

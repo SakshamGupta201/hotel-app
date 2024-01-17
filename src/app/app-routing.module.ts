@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'list',
     component: ReservationListComponent
   },
+  {
+    path: 'edit/:id',
+    component: ReservationFromComponent
+  },
 ];
 
 @NgModule({
