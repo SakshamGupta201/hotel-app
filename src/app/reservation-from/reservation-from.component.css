@@ -1,0 +1,26 @@
+.bd-content .bd-code-snippet {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .bd-code-snippet {
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-radius: var(--bs-border-radius);
+  }
+
+  .bd-example {
+    --bd-example-padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-radius: var(--bs-border-radius);
+  }
+}
+
+.bd-code-snippet {
+  margin: 0 -1.5rem 1rem;
+  border: solid var(--bs-border-color);
+  border-width: 1px 0;
+}
